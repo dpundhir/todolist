@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(235,235,235);
+}
+
+#main{
+    font-size: 72px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(238, 173, 186);
+    min-width: 400px;
+    text-align: center;
+    background-color: rgb(225,225,225);;
+    padding-top: 15px;
+}
+
+::placeholder{
+    color: rgb(115,115,115);
+    opacity: 0.6;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+input{
+    width: 20%;
+    border-radius: 10px;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    min-width: 210px;
+    color: rgba(216, 23, 48, 0.4);
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+input:focus{
+    border: 4px solid rgb(215,215,215);
+    outline: 0;
+}
+
+#addbtn,#deletebtn{
+    width: 15%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: lightgreen;
+    color: green;
+    border-radius: 10px;
+    min-width: 100px;
+    opacity: 0.8;
+    box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+#deletebtn{
+    background-color: rgb(237, 127, 54);
+    color: red;
+}
+
+
+#addbtn:hover, #deletebtn:hover{
+    box-shadow: 0  37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -10px);
+}
+    
+#test,#completed{
+    margin-left: 35%;
+}
+
+#test{
+    list-style-type: circle;
+    font-size: 25px;
+    color: green;
+}
+
+#completed{
+    list-style-type: circle;
+    font-size: 25px;
+    color: red;
+}
+
+h1#head, h1#headq{
+    color: rgba(53, 2, 2, 0.459);
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1#headq{
+    background-color: rgba(78, 212, 16, 0.2); 
+}
+
+h1#head{
+    background-color: rgba(206, 23, 48, 0.2);
+}
+
+#tobe{
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+
+#done{
+    width: 48%;
+    margin: 1% ;
+    float: right;
+}
+
+
+@media (max-width: 900px){
+    #tobe,#done{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
