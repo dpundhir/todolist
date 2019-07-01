@@ -2,8 +2,8 @@ var todos = []
 var tobedone = []
 
 function add() {
-    var item = document.getElementById("ip").value
-    var list = document.getElementById("test")
+    var item = document.getElementById("ip").value;
+    var list = document.getElementById("test");
 
     if (tobedone.length == 0) {
         if(item.length != 0)
@@ -14,7 +14,7 @@ function add() {
 
     else {
         if (tobedone.includes('li' + item))
-            alert('Item already in list')
+            alert('Item already in list');
 
         else {
             list.innerHTML += `<li id='li${item}'>${item}</li>`
